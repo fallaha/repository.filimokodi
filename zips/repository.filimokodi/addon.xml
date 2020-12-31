@@ -2,14 +2,14 @@
 <addon id="repository.filimokodi" name="Filimo Kodi Repo" version="1.0" provider-name="Ali Fallah">
     <extension point="xbmc.addon.repository" name="Filimo Kodi Repo">
         <dir>
-            <info compressed="false">https://raw.githubusercontent.com/fallaha/repository.filimokodi/master/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/fallaha/repository.filimokodi/master/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/fallaha/repository.filimokodi/master/zips/</datadir>
+            <info compressed="false">https://raw.githubusercontent.com/fallaha/repository.filimokodi/kodi19/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/fallaha/repository.filimokodi/kodi19/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/fallaha/repository.filimokodi/kodi19/zips/</datadir>
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Filimo Kodi</summary>
-        <description>Filimo Kodi and Dependency Repository</description>
+        <description>Filimo Kodi and Dependency Repository For Kodi 19</description>
         <disclaimer></disclaimer>
         <platform>all</platform>
         <assets>

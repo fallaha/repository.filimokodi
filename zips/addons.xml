@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.filimo" name="Filimo" version="1.0" provider-name="Ali Fallah">
     <requires>
-        <import addon="xbmc.python" version="2.20.0"/>
+        <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="Main.py">
@@ -17,116 +17,19 @@
 <addon id="repository.filimokodi" name="Filimo Kodi Repo" version="1.0" provider-name="Ali Fallah">
     <extension point="xbmc.addon.repository" name="Filimo Kodi Repo">
         <dir>
-            <info compressed="false">https://raw.githubusercontent.com/fallaha/repository.filimokodi/master/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/fallaha/repository.filimokodi/master/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/fallaha/repository.filimokodi/master/zips/</datadir>
+            <info compressed="false">https://raw.githubusercontent.com/fallaha/repository.filimokodi/kodi19/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/fallaha/repository.filimokodi/kodi19/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/fallaha/repository.filimokodi/kodi19/zips/</datadir>
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Filimo Kodi</summary>
-        <description>Filimo Kodi and Dependency Repository</description>
+        <description>Filimo Kodi and Dependency Repository For Kodi 19</description>
         <disclaimer></disclaimer>
         <platform>all</platform>
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon>
-
-<addon id="script.filimoget" name="Get From Filimo" version="1.0" provider-name="Ali Fallah">
-	<requires>
-		<import addon="script.module.simplejson" version="2.0.10"/>
-        <import addon="xbmc.python" version="2.20.0"/>
-        <import addon="script.module.requests" />
-	</requires>
-    <extension point="xbmc.python.script" library="default.py">
-        <provides>executable</provides>
-    </extension>
-	<extension point="xbmc.addon.metadata">
-	    <summary lang="en_GB">Script Filimo to Save Movie in File</summary>
-		<description lang="en_GB">Script Filimo to Save Movie in File</description>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="script.module.requests"
-       name="requests"
-       version="2.22.0"
-       provider-name="kennethreitz">
-  <requires>
-    <import addon="xbmc.python" version="2.25.0"/>
-    <import addon="script.module.urllib3" version="1.22"/>
-    <import addon="script.module.chardet" version="3.0.4"/>
-    <import addon="script.module.idna" version="2.6"/>
-    <import addon="script.module.certifi" version="2017.07.27.1"/>
-  </requires>
-  <extension point="xbmc.python.module"
-             library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">Python HTTP for Humans</summary>
-    <description lang="en_GB">Packed for KODI from https://pypi.org/project/requests/</description>
-    <platform>all</platform>
-    <language></language>
-    <license>Apache2</license>
-    <forum></forum>
-    <website>http://python-requests.org</website>
-    <source>https://github.com/Freso/script.module.requests</source>
-    <email>freso.dk AT gmail.com</email>
-    <assets>
-      <icon>resources/icon.png</icon>
-    </assets>
-  </extension>
-</addon>
-
-<addon id="script.module.simplejson"
-       name="simplejson"
-       version="3.16.1"
-       provider-name="Bob Ippolito">
-  <requires>
-    <import addon="xbmc.python" version="2.14.0"/>
-  </requires>
-  <extension point="xbmc.python.module"
-             library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <language></language>
-    <summary lang="en">Simple, fast, extensible JSON encoder/decoder for Python</summary>
-    <description lang="en">Simple, fast, extensible JSON encoder/decoder for Python</description>
-    <disclaimer lang="en">Code taken from https://pypi.org/project/simplejson/</disclaimer>
-    <license>MIT License, Academic Free License v. 2.1</license>
-    <website>https://pypi.org/project/simplejson/</website>
-    <source>https://github.com/simplejson/simplejson</source>
-  </extension>
-</addon>
-
-<addon id="skin.filimobox" name="FilimoBox" provider-name="Ali Fallah" version="1.0">
-    <requires>
-        <import addon="xbmc.gui" version="5.14.0" />
-        <import addon="plugin.video.filimo" version="1.0" />
-        <import addon="script.filimoget" version="1.0" />
-    </requires>
-    <extension debugging="false" defaultthemename="Textures.xbt" effectslowdown="1" point="xbmc.gui.skin">
-        <res aspect="16:9" default="true" folder="1080i" height="1080" width="1920" />
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Watch infinit Movies.</summary>
-
-        <description lang="en">Every Movie Find Here</description>
-        <platform>all</platform>
-        <license>filimo.com</license>
-        <forum />
-        <source />
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-            <screenshot>resources/screenshot-01.jpg</screenshot>
-            <screenshot>resources/screenshot-02.jpg</screenshot>
-            <screenshot>resources/screenshot-03.jpg</screenshot>
-            <screenshot>resources/screenshot-04.jpg</screenshot>
         </assets>
     </extension>
 </addon>
