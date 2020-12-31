@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.filimoget" name="Get From Filimo" version="1.0" provider-name="Ali Fallah">
+	<requires>
+		<import addon="script.module.simplejson" version="2.0.10"/>
+        <import addon="xbmc.python" version="2.20.0"/>
+        <import addon="script.module.requests" />
+	</requires>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>executable</provides>
+    </extension>
+	<extension point="xbmc.addon.metadata">
+	    <summary lang="en_GB">Script Filimo to Save Movie in File</summary>
+		<description lang="en_GB">Script Filimo to Save Movie in File</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+	</extension>
+</addon>
